@@ -91,7 +91,7 @@ gulp.task('cleanimg', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('dev/sass/**/*.sass', gulp.parallel('styles'));
+	gulp.watch('dev/scss/**/*.scss', gulp.parallel('styles'));
 	gulp.watch(['libs/**/*.js', 'dev/js/common.js'], gulp.parallel('scripts'));
 	gulp.watch('dev/*.html', gulp.parallel('code'));
 	gulp.watch('dev/img/_src/**/*', gulp.parallel('img'));
